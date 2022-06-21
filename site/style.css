@@ -1,0 +1,121 @@
+html {
+    font-size: 62.5%; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 4rem;
+}
+
+.container{
+    width: 90%;
+    margin-top: 6rem;
+    
+}
+
+.items{
+    width: 100%;
+    border: 3px solid black;
+    padding: 5rem 1rem 1rem 1rem;
+    position: relative;
+    text-align: center;
+    background-color: #999;
+}
+
+h3{
+    font-size: 2rem;
+    border: 3px solid black;
+    width: 40%;
+    padding:0.5rem 3rem 0.5rem 3rem ;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.8rem;
+}
+
+.heading-1{
+    background-color: rgb(251, 163, 178);
+}
+
+.heading-2{
+    background-color: rgb(202, 71, 71);
+    color: white;
+}
+
+.heading-3{
+    background-color: rgb(188, 222, 119);
+}
+
+
+ /* LAPTOP LAYOUT */
+@media screen 
+  and (min-width: 992px)  
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap: 2rem;}
+}
+
+/* TABLET LAYOUT */
+
+@media screen 
+  and (min-width: 768px) 
+  and (max-width: 991px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+
+    .container{
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 2fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+
+    .item--3{
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+
+}
+
+/* Mobile Phone Layout */
+
+@media screen  
+  and (max-width: 767px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+
+    .container{
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        row-gap: 3.6rem;
+        margin-bottom: 4rem;
+    }
+
+}
